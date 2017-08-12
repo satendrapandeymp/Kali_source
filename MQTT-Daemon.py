@@ -14,9 +14,7 @@ def onConnect(client, userdata, rc):
     client.subscribe([(topic, 1)]) 
 
 def onMessage(client, userdata, message): 
-	print message
-
-	# Run another script
+	print message.payload
 	os.system("python Take-pic.py")
 
 while True:
