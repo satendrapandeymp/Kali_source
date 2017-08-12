@@ -17,7 +17,7 @@ def onMessage(client, userdata, message):
 	print message
 
 	# Run another script
-	os.system("python main.py")
+	os.system("python Take-pic.py")
 
 while True:
     try:
